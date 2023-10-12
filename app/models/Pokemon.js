@@ -12,6 +12,7 @@ export class Pokemon {
     return `
     <p class="fs-1">${this.name}</p>
     <img src="${this.img}" alt="${this.name} image" class="pokemon-image">
+    <button onclick="app.SandboxPokemonsController.catchPokemon()" type="button" class="btn btn-success">Catch</button>
     <div class="mt-5">
       <p><span class="fw-bold">Weight:</span> ${this.weight}</p>
       <p><span class="fw-bold">Height:</span> ${this.height}</p>
@@ -29,6 +30,11 @@ export class Pokemon {
     return content
   }
 
+  get caughtPokemonTemplate() {
+    return `
+    <p role="button" onclick="">${this.name}</p>
+    `
+  }
 
 
 

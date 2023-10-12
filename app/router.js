@@ -1,9 +1,9 @@
 import { AboutController } from "./controllers/AboutController.js";
 import { HomeController } from "./controllers/HomeController.js";
+import { SandboxPokemonsController } from "./controllers/SandboxPokemonsController.js";
 import { ValuesController } from "./controllers/ValuesController.js";
 import { WildPokemonsController } from "./controllers/WildPokemonsController.js";
 import { AboutView } from "./views/AboutView.js";
-
 /**
  * Register your routes for the application here
  * @type {Route[]}
@@ -11,7 +11,7 @@ import { AboutView } from "./views/AboutView.js";
 export const router = [
   {
     path: '',
-    controller: WildPokemonsController,
+    controller: [WildPokemonsController, SandboxPokemonsController],
     view: null
   },
   {

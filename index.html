@@ -48,6 +48,27 @@
 
     <div class="container-fluid">
       <section class="row">
+
+
+        <a class="btn btn-success" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+          aria-controls="offcanvasExample">
+          My Pokemons!
+        </a>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">My Caught Pokemons</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div id="caughtPokemonOffCanvas">
+            </div>
+          </div>
+        </div>
+
+
+
         <div class="col-9 d-flex justify-content-center mt-5">
           <div id="activePokemonDiv" class="mt-3 d-flex flex-column align-items-center">
 
